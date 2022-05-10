@@ -1,0 +1,89 @@
+@import "config";
+
+.platform {
+  padding: 26px;
+
+  &__wrapper {
+    max-width: 570px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $ipad) {
+      max-width: 700px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: $wrapper-desktop;
+      padding: 0 25px;
+      flex-direction: row;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #e3e4e6;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media screen and (min-width: $ipad) {
+      flex-flow: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0px 15px 4px 15px;
+    margin: 7px 4px;
+    min-width: 55px;
+    color: $font-bright;
+    background-color: #fa1e4e;
+    @include box-shadow(2px, $dark-shade);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    @media screen and (min-width: $ipad) {
+      max-width: 190px;
+      // padding: 25px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 220px;
+    }
+    &:hover {
+      background-color: #5778a3;
+      box-shadow: none;
+      filter: contrast(180%);
+    }
+
+    &--active {
+      transform: scale(1.08);
+      background-color: $bcg-purple;
+      box-shadow: none;
+      color: $font-bright;
+      filter: contrast(180%);
+    }
+  }
+
+  &__icon {
+    font-size: 5rem;
+
+    @media screen and (min-width: $ipad) {
+      font-size: 6rem;
+    }
+  }
+
+  &__name {
+    font-size: 2.2rem;
+    // font-weight: 200;
+    margin-top: 8px;
+    color: #fff;
+  }
+}

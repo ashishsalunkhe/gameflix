@@ -1,0 +1,109 @@
+@import "config";
+
+.hero {
+  position: relative;
+  height: 70vh;
+  
+  background-color: #180e17;
+  
+  @media screen and (orientation: landscape) {
+    height: 80vh;
+    // background-position-y: 50%;
+  }
+ 
+  &__header {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 20%;
+
+    @media screen and (min-width: $desktop) {
+      bottom: 18%;
+    }
+  }
+
+  &__title {
+    padding: 0 2.5rem;
+    text-align: center;
+    
+    @media screen and (min-width: 600px) {
+      padding: 0 4rem;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0 14rem;
+    }
+    @media screen and (min-width: 1600px) {
+      padding: 0 22rem;
+    }
+  }
+
+  &__maintitle {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+    color: #fa1e4e;
+    @media screen and (min-width: $desktop) {
+      font-size: 8rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #e3e4e6;
+    @media screen and (min-width: $desktop) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  
+}
+.bgimage{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  position: absolute;
+  width: 10%;
+  // background-image: url("../../assets/logo/dice2.svg");
+  right: 45%;
+  bottom: 50%;
+
+  @media screen and (min-width: 600px) {
+    width: 45%;
+    right: 32%;
+    bottom: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    width:20%;
+    right: 32%;
+    bottom: 50%;
+  }
+  @media screen and (min-width: 375px) {
+    width: 6%;
+    right: 47%;
+    bottom: 50%;
+  }
+}
+
+.animate{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
