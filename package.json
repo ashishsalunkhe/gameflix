@@ -1,6 +1,6 @@
 {
-  "homepage": "http://radek195.github.io/games",
-  "name": "games",
+  "homepage": "https://github.com/ashishsalunkhe/gameflix",
+  "name": "GameFlix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
