@@ -8,7 +8,7 @@ const Navbar = ({ setRand }) => {
   return (
     <nav className="nav">
       <div className="nav__wrapper">
-       <a href="/"><img src={logo} className="nav__logo" alt="controller" /></a> 
+       <a href="/gameflix"><img src={logo} className="nav__logo" alt="controller" /></a> 
 
         <ul className="nav__list">
           {/* <li className="nav__item">
