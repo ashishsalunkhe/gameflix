@@ -48,7 +48,7 @@ const Result = ({ categories, platform, random, setRand }) => {
       game_url,
     }) => {
       return (
-        <a className="result__card" key={id} href={game_url}>
+        <a className="result__card" key={id} href={game_url} target="_blank">
           <img
             src={thumbnail}
             alt={short_description}
